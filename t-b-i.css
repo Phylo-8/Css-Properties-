@@ -1,0 +1,144 @@
+        * 
+		{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Segoe UI;
+        }
+
+        body
+		{
+            background-color: #f9f9f9;
+        }
+
+       
+        nav
+		{
+            background-color: #ffffff;
+            padding: 2%;
+            display: flex;
+			width:100%;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            
+		}
+
+        nav .logo
+		{
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow:1px 3px 7px #2C3947;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+       
+        .bnr
+		{
+            background-image:url('https://thumbs.dreamstime.com/b/generated-image-419374336.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .tlt
+		{
+            font-size: 60px;
+        }
+		
+		.yr2026
+		{
+			background-color:skyblu;
+			width:100%;
+			height:100%;
+			
+			padding:3.5%;
+		}
+
+		
+		.head
+		{
+			display:flex;
+			padding:1%;
+		}
+
+		.tl
+		{
+			width:50%;
+			background-color:;
+			margin-top:2%;
+		}
+		
+		.s1
+		{
+			width:100%;
+			height:100%;
+			background-color:re;
+			display:flex;
+			gap:5%;
+			margin-top:2%;
+			
+		}
+		
+		.trp
+		{
+			width:30%;
+			height:100%;
+			background-color:;
+			margin-left:2%;
+			padding:1%;
+		}
+		
+		.trp
+		{
+			box-shadow:1px 2px 10px grey;
+		}
+		
+		.mnl
+		{
+			width:100%;
+			height:100%;
+		}
+
+		.mh
+		{
+			color:red; 
+			font-weight:bold;
+		}
+
+		.dte
+		{
+			margin-top:2%;
+			font-size:18px;
+			
+		}
+
+
+		.ht
+		{
+			font-weight:bold;
+			margin-top:3%;
+			font-size:22px;
+		}
+
+		.desp
+		{
+			font-size:17px;
+			width:100%;
+			margin-top:3%;
+			color:grey;
+		}
+		
+		
+			

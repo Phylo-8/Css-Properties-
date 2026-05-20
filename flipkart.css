@@ -1,0 +1,231 @@
+*
+{
+	box-sizing:border-box;
+}
+
+body
+{
+	padding:1%;
+	margin:0px;
+	background-color:#F5F5F5;
+}
+
+nav
+{
+	background-color:;
+	width:100%;
+	height:8%;
+	display:flex;
+	gap:3%;
+	position:fixed;
+	
+}
+
+.flg
+{
+	width:46%;
+	height:100%;
+	
+}
+.flg2
+{
+	
+	margin-left:5%;
+	
+}
+
+.flp
+{
+	width:12%;
+	background-color:#FAE251;
+	padding:1%;
+	border-radius:10px;
+	display:flex;
+	
+}
+.flp2
+{
+	width:12%;
+	background-color:#EEEEEE;
+	padding:1%;
+	border-radius:10px;
+	display:flex;
+	
+}
+
+.nm
+{
+	margin-left:12px;
+	margin-top:3%;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.lctn
+{
+	margin-top:%;
+	display:flex;
+	gap:5%;
+	width:25%;
+	background-color:re;
+	margin-left:6%;
+}
+
+.icn
+{
+	font-size:20px;
+	margin-top:3.5%;
+}
+
+.ltn
+{
+	margin-top:4%;
+    font-weight:bold;
+}
+.ltn2
+{
+	margin-top:4%;
+    color:blue;
+	font-weight:bold;
+}
+
+.srch
+{
+	background-color:gre;
+	height:60px;
+	width:100%;
+	margin-top:6%;
+	display:flex;
+	position:fixed;
+}
+.ipt
+{
+	width:70%;
+}
+.srhbox
+{
+	width:100%;
+	padding:1.5%;
+	border-radius:10px;
+	border:none;
+	border:2px solid blue;
+	
+}
+
+.shop
+{
+	display:flex;
+	background-color:;
+	width:30%;
+	gap:3%;
+	
+}
+
+.usr
+{
+	margin-left:5%;
+	font-size:25px;
+	margin-top:2%;
+}
+
+.usr2
+{
+	
+	font-size:20px;
+	margin-top:2%;
+}
+
+.srch2
+{
+	margin-top:10%;
+	width:95%;
+	height:80px;
+	background-color:#F5F5F5;
+	position:fixed;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	
+}
+
+.item
+{
+	display:flex;
+	gap:4.1%;
+	margin-top:1%;
+	
+}
+
+.icns
+{
+	font-size:25px;
+	margin-left:3%;
+	
+}
+
+.items
+{
+	margin-top:0px;
+	margin-left:2%;
+	display:flex;
+	gap:4%;
+	font-size:20px;
+}
+
+.baner
+{
+	width:97%;
+	background-color:gre;
+	height:100%;
+	margin-top:19%;
+	
+}
+
+.imgs
+{
+	display:flex;
+	gap:4%;
+}
+
+.adv
+{
+	width:30%;
+	height:100%;
+	border-radius:20px;
+}
+
+.advs
+{
+	width:20%;
+	height:100%;
+}
+
+
+
+.imgs
+{
+	margin-top:2%;
+	height:100%;
+}
+
+.advs
+{
+	margin-left:%;
+	border-radius:15px;
+	
+}
+
+.nme
+{
+	margin-left:5%;
+	font-size:25px;
+	
+}
+
+.head
+{
+	display:flex;
+	gap:11%;
+}
+
+
+

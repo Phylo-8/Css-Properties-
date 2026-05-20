@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements & Classes Playground</title>
+    <link rel="stylesheet" href="sudo.css">
+</head>
+<body>
+
+    <!-- Navigation (Great for pseudo-classes like :hover, :visited, :not) -->
+    <nav class="navbar">
+        <div class="logo">Pseudo<span>Lab</span></div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <!-- Header Section (Great for ::before, ::after, and ::first-letter) -->
+        <header class="hero-section">
+            <h1 class="hero-title">Mastering CSS Selectors</h1>
+            <p class="hero-text">Pseudo-classes style specific states of an element, while pseudo-elements style specific parts of an element. Use this template to experiment with both!</p>
+        </header>
+
+        <!-- Feature Cards (Great for :nth-child, :first-child, :last-child) -->
+        <section class="card-grid">
+            <div class="card">
+                <h3>Card One</h3>
+                <p>Hover over me to see a transition effect.</p>
+            </div>
+            <div class="card">
+                <h3>Card Two</h3>
+                <p>Every odd or even card can be styled differently using nth-child.</p>
+            </div>
+            <div class="card">
+                <h3>Card Three</h3>
+                <p>Notice the cool accent lines you can add using pseudo-elements.</p>
+            </div>
+        </section>
+
+        <!-- Form Section (Great for :focus, :valid, :invalid, :disabled, and ::placeholder) -->
+        <section class="form-section">
+            <h2>Interactive Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn">Submit Details</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

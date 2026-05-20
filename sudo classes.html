@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Pseudo Classes</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="sudo classes are used to show new activity when it goes on a speicific state">
+		<meta name="keywords" content="sudo classes ">
+		<meta name="author" content="Anybody">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			h1, div{
+				width:10%;
+				margin:auto;
+				margin-top:2%;
+			}
+			
+			h1:hover{
+				color:red;
+			}
+			
+			input:focus {
+				background-color: pink;
+			}
+			
+			.aa:active {
+				color:yellow
+			}
+			
+			.a:link  {
+				color:red
+			}
+			
+			.b:visited   {
+				color:blue
+			}
+			
+			p:only-child{
+				color:pink
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>
+			Durva
+		</h1>
+		<div>
+			<input type="text">
+		</div>	
+		<div>
+			<a class="aa" href="https://www.amazon.com/">Amazon</a><br>
+			<a class="a" href="https://www.amazon.com/">Amazon</a> <br>
+			<a class="b" href="https://www.youtube.com/">YouTube</a>
+		</div>
+		<div>
+			<p>holaa</p>
+			<p>Durva</p>
+			<p>Durva</p>
+		</div>
+		<div>
+			<p>holaa</p>
+			<p>Durva</p>
+			<p>Durva</p>
+		</div>
+	</body>
+</html>
