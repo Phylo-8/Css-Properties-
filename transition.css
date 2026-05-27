@@ -1,0 +1,418 @@
+*
+{
+	box-sizing:border-box;
+}
+
+body
+{
+	margin:0;
+	padding:1%;
+}
+
+nav
+{
+	background-color:skyblu; 
+	width:100%;
+	height:78px;
+	display:flex;
+	border-bottom:1px solid lightgrey;
+	
+}
+
+
+.logo
+{
+	height:100%; 
+	width:10%;
+	margin-left:2%;
+}
+
+.list
+{
+	font-size:20px;
+	width:40%;
+	margin-top:2%;
+	margin-left:47%;
+	font-weight:bold;
+}
+
+.exp
+{
+	transition-property:border;
+	transition-duration:5s;
+}
+
+
+
+.exp:hover
+{
+	border-bottom:2px solid black;
+}
+
+.li
+{
+	margin-left:10%;
+}
+
+.btn
+{
+	margin-left:5%;
+	padding:3%;
+	margin-top:-10%;
+	color:white;
+	width:25%;
+	background-color:black;
+	border-radius:20px;
+	transition-property:width;
+	transition-duration:2s;
+}
+
+.btn:hover
+{
+	width:30%;
+}
+
+.bhead
+{
+	display:flex; 
+	width:100%;
+	background-color:skyblu;
+	height:350px;
+	margin-top:1%;
+}
+
+.headt1
+{
+	width:100%;
+	width:45%;
+	padding:2%;
+	background-color:;
+	
+	
+}
+
+.txt1
+{
+	font-weight:bold;
+	font-size:50px;
+	transition-property:color;
+	transition-duration:2s;
+	
+}
+
+.txt1:hover
+{
+	color:navy;
+}
+
+input
+{
+	padding:3%;
+	width:100%;
+	font-size:17px;
+	background-color:#F3F4F4;
+	border-radius:10px;
+	border: 1px solid white;
+	margin-top:3%;
+	
+}
+
+.imghd
+{
+	margin-left:20px;
+	margin-left:%;
+	width:50%;
+	display:flex;
+	background-color:re;
+	
+}
+
+.cf1
+{
+	height:80%;
+	width:45%;
+	margin-top:7%;
+	border-radius:20px;
+	margin-left:5%;
+	transition-property:height;
+	transition-duration:2s;
+}
+
+.cf1:hover
+{
+	height:90%;
+}
+
+
+.cf2
+{
+	height:80%;
+	width:45%;
+	margin-top:7%;
+	border-radius:20px;
+	margin-left:10%;
+	transition-property:height;
+	transition-duration:2s;
+}
+
+.cf2:hover
+{
+	height:90%;
+}
+
+.nv
+{
+	width:100%;
+	height:100%;
+	margin-top:3%;
+}
+
+.pg
+{
+	display:flex;
+	justify-content:center;
+	font-size:20px;
+	
+}
+
+.pg2
+{
+	margin-left:2%;
+	margin-top:1%;
+	font-weight:bold;
+	color:gray;
+}
+
+.hm
+{
+	background-color:black;
+	padding:1%;
+	color:white;
+	border-radius:20px;
+	transition-property:font-size;
+	transition-duration:2s;
+}
+
+.hm:hover
+{
+	font-size:23px;
+}
+
+
+.typ
+{
+	width:100%;
+	height:100%;
+	background-color:skyblu;
+	margin-top:1%;
+	padding:1%;
+	margin-left:1%;
+}
+
+.tl
+{
+	font-size:25px;
+	font-weight:bold;
+}
+
+.new
+{
+	display:flex;
+	margin-top:2%;
+}
+
+.wlp
+{
+	width:15%;
+	display:flex;
+	border:1px solid grey;
+	padding:0.5%;
+	border-radius:20px;
+	transition-property:background-color;
+	transition-duration:2s;
+}
+
+.wlp:hover
+{
+	background-color:black;
+	color:white;
+}
+
+.img1
+{
+	height:30px;
+	width:30px; 
+	border-radius:20px;
+	
+}
+
+.h1
+{
+	margin-top:1.5%;
+	margin-left:3%;
+	font-size:20px;
+}
+
+.view
+{
+	color:grey;
+	margin-top:3.8%;
+	margin-left:2%;
+}
+
+.mg
+{
+	margin-left:2.6%;
+}
+
+.img2
+{
+	height:30px;
+	width:30px; 
+	border-radius:20px;
+	
+}
+.img3
+{
+	height:30px;
+	width:30px; 
+	border-radius:20px;
+	
+}
+
+.bk
+{
+	width:17%;
+	display:flex;
+	border:1px solid grey;
+	padding:0.5%;
+	border-radius:20px;
+	transition-property:background-color;
+	transition-duration:2s;
+}
+
+.bk:hover
+{
+	background-color:black;
+	color:white;
+}
+
+
+
+.flw
+{
+	width:13%;
+	display:flex;
+	border:1px solid grey;
+	padding:0.5%;
+	border-radius:20px;
+	transition-property:background-color;
+	transition-duration:2s;
+}
+
+.flw:hover
+{
+	background-color:black;
+	color:white;
+}
+
+
+.ldp
+{
+	width:15%;
+	display:flex;
+	border:1px solid grey;
+	padding:0.5%;
+	border-radius:20px;
+	transition-property:background-color;
+	transition-duration:2s;
+}
+
+.ldp:hover
+{
+	background-color:black;
+	color:white;
+}
+
+
+.dg
+{
+	width:11%;
+	display:flex;
+	border:1px solid grey;
+	padding:0.5%;
+	border-radius:20px;
+	transition-property:background-color;
+	transition-duration:2s;
+}
+
+.dg:hover
+{
+	background-color:black;
+	color:white;
+}
+
+.images
+{
+	width:100%;
+	background-color:skyblu;
+	display:flex;
+	gap:1%;
+	z-index:-1;
+}
+
+.im1
+{
+	height:351px;
+	width:300px;
+	border-radius:20px;
+	padding:2%;
+	
+}
+
+.im2
+{
+	height:251px;
+	width:100%;
+	border-radius:20px;
+	padding:3%;
+	margin-top:1%;
+	
+}
+
+.im3 
+{
+	height:281px;
+	width:100%;
+	border-radius:20px;
+	padding:5%;
+	margin-top:2%;
+	
+}
+
+.im4
+{
+	height:401px;
+	width:100%;
+	border-radius:20px;
+	margin-top:1%;
+	padding:5%;
+	
+}
+
+.im5
+{
+	height:231px;
+	width:100%;
+	border-radius:20px;
+	padding:5%;
+	margin-top:1%;
+}
+
+
+.cl
+{
+	width:25%;
+	height:100%;
+}
+
