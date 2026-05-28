@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style> 
+			h1
+			{
+				text-align:center;
+			}
+			
+			.clp1
+			{
+				width: 30%; 
+				border: 1px solid black;
+				overflow:hidden;
+				text-overflow: clip;
+				white-space:nowrap;
+			}
+			
+			.elp1
+			{
+				width: 30%; 
+				border: 1px solid black;
+				overflow:hidden;
+				text-overflow: ellipsis;
+				white-space:nowrap;
+			}
+			
+			.hv:hover
+			{
+				overflow:visible;
+			}
+			
+			.wrap1
+			{
+				width:20%;
+				border:1px solid black;
+				word-wrap:break-word;
+			}
+			
+			.kp1
+			{
+				width:20%;
+				border:1px solid black;
+				word-break:keep-all;
+			}
+			
+			.bka1
+			{
+				width:10%;
+				border:1px solid black;
+				word-break:break-all;
+			}
+			
+			.htb
+			{
+				writing-mode: horizontal-tb; 
+			}
+			
+			.vrl
+			{
+				 writing-mode: vertical-rl; 
+
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Text-Overflow</h1>
+		<h2>1) Clip</h2>
+		<p class="clp1">In clip if there is a single long line which cannot be fitted in a particular width then clip will Cut the line from where width is ending and it wont look as if there is a long text </p>
+		<h2>1) ellipsis</h2>
+		<p class="elp1">In ellipsis if there is a single long line which cannot be fitted in a particular width then ellipsis will Cut and add ... there so that it is understandable that there is more text </p>		
+		<h1>Overflow Visible</h1>
+		<h2>1) Clip</h2>
+		<p class="clp1 hv">In clip if there is a single long line which cannot be fitted in a particular width then clip will Cut the line from where width is ending and it wont look as if there is a long text </p>
+		<h2>1) ellipsis</h2>
+		<p class="elp1 hv">In ellipsis if there is a single long line which cannot be fitted in a particular width then ellipsis will Cut and add ... there so that it is understandable that there is more text </p>
+		<h1>Word Wrapping</h1>
+		<p class="wrap1">Word Wrapping allows to break long wordsssssssssssssssssssssssssssssssssssssssssss and continue on next line</p>
+		<h1>Word Breaking</h1>
+		<h2>1)keep-all</h2>
+		<p class="kp1">It allows words to break at hyphens for eg. Hi-my-name-is-durva-im-studying-fullstack-</p>
+		<h2>2)Break-all</h2>
+		<p class="bka1">It will break the words anyhow like not in a order or a particular type but just randomly it will break</p>
+		<h1>Writing Mode</h1>
+		<h2>1)Horizontal-tb</h2>
+		<p class="htb">Horizontal-text</p>
+		<h2>2)vertical-rl</h2>
+		<p class="vrl">Vertical-text</p>
+	
+	</body>
+</html>
+
