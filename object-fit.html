@@ -1,0 +1,221 @@
+<!--<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			object fit
+		</title>
+		<style>
+			img{
+				object-fit:scale-down;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqDf0zMWywIUVUEoi7IAyTQD3NcsRAfwm_WA&s" height="400" width="400">
+	</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Object-Fit Gallery</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* The Gallery Grid Structure */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Individual Card Component */
+        .gallery-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* CRITICAL STEP: 
+           To make object-fit work, the container wrapper MUST define 
+           a static dimensions block for the image to fill.
+        */
+        .image-container {
+            width: 100%;
+            height: 250px; /* Forces a uniform height across all cards */
+            background-color: #000; /* Dark background to highlight letterboxing */
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            /* The magic property requested */
+            transition: object-fit 0.3s ease; 
+        }
+
+        /* Specific Object-Fit Utility Implementations */
+        .fit-cover {
+            object-fit: cover;
+        }
+
+        .fit-contain {
+            object-fit: contain;
+        }
+
+        .fit-fill {
+            object-fit: fill;
+        }
+
+        .fit-none {
+            object-fit: none;
+        }
+
+        /* Metadata Details Styling */
+        .card-details {
+            padding: 1.25rem;
+        }
+
+        .card-details h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            background-color: #0284c7;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        .card-details p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CSS object-fit Showcase</h1>
+        <p>A responsive layout displaying how the same images respond differently depending on the explicit value of the CSS <code>object-fit</code> property inside matching aspect-ratio container spaces.</p>
+    </header>
+
+    <main class="gallery-grid">
+        
+        <div class="gallery-card">
+            <div class="image-container">
+                <img src="https://picsum.photos/id/10/800/600" alt="Mountain landscape" class="fit-cover">
+            </div>
+            <div class="card-details">
+                <h3>Mountain Peak <span class="badge" style="background-color: #10b981;">cover</span></h3>
+                <p>Crops the image intelligently to completely fill its container space while preserving original aspect ratio.</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <div class="image-container">
+                <img src="https://picsum.photos/id/10/800/600" alt="Mountain landscape" class="fit-contain">
+            </div>
+            <div class="card-details">
+                <h3>Mountain Peak <span class="badge" style="background-color: #3b82f6;">contain</span></h3>
+                <p>Letterboxes or pillarboxes the image so the entire file scales down cleanly to sit fully visible inside constraints.</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <div class="image-container">
+                <img src="https://picsum.photos/id/26/800/600" alt="Neon structural wiring" class="fit-fill">
+            </div>
+            <div class="card-details">
+                <h3>Industrial Wire <span class="badge" style="background-color: #ef4444;">fill</span></h3>
+                <p>Ignores original file aspect ratio entirely, stretching or squishing pixels forcefully to match container boundaries perfectly.</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <div class="image-container">
+                <img src="https://picsum.photos/id/26/800/600" alt="Neon structural wiring" class="fit-none">
+            </div>
+            <div class="card-details">
+                <h3>Industrial Wire <span class="badge" style="background-color: #6b7280;">none</span></h3>
+                <p>Completely drops scaling. The image acts at its native source resolution sizing, keeping only the center portion visible.</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <div class="image-container">
+                <img src="https://picsum.photos/id/103/600/900" alt="Forest view" class="fit-cover">
+            </div>
+            <div class="card-details">
+                <h3>Deep Forest <span class="badge" style="background-color: #10b981;">cover</span></h3>
+                <p>Demonstrates a native portrait file fitting perfectly into our landscape-oriented row layout without distortion.</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <div class="image-container">
+                <img src="https://picsum.photos/id/103/600/900" alt="Forest view" class="fit-contain">
+            </div>
+            <div class="card-details">
+                <h3>Deep Forest <span class="badge" style="background-color: #3b82f6;">contain</span></h3>
+                <p>The same portrait asset, revealing the empty background margins left on the left and right sides to avoid cropping.</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

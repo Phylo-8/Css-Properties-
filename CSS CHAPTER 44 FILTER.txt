@@ -1,0 +1,58 @@
+CSS filter property: all properties and functions
+The CSS filter property allows you to apply visual effects to an element's rendering before it is displayed. These effects are similar to those found in image
+ editing software and can be applied dynamically using transitions and animations. You can use one or multiple filter functions to achieve various visual effects.
+Filter functions
+Here's a list of all filter functions you can use within the filter property, along with a description and examples:
+blur(): Applies a Gaussian blur with a specified radius (<length>). Example: filter: blur(5px);
+brightness(): Adjusts brightness using a number (0-1) or percentage (0% - infinity). Example: filter: brightness(150%);
+contrast(): Adjusts contrast using a number (0-infinity) or percentage (0% - infinity). Example: filter: contrast(200%);
+drop-shadow(): Adds a shadow that follows the alpha mask. Values include offsetX, offsetY, blur-radius, and color. Example: filter: 
+drop-shadow(4px 4px 10px rgba(0,0,0,0.5));
+grayscale(): Converts to grayscale using a number (0-1) or percentage (0% - 100%). Example: filter: grayscale(100%);
+hue-rotate(): Rotates colors around the color circle by a specified <angle>. Example: filter: hue-rotate(180deg);
+invert(): Inverts colors using a number (0-1) or percentage (0% - 100%). Example: filter: invert(100%);
+opacity(): Adjusts transparency using a number (0-1) or percentage (0% - 100%). Example: filter: opacity(50%);
+saturate(): Adjusts color intensity using a number (0-infinity) or percentage (0% - infinity). Example: filter: saturate(300%);
+sepia(): Converts to sepia using a number (0-1) or percentage (0% - 100%). Example: filter: sepia(100%);
+url(): References an SVG filter from an external file. Value: url(svg-url#element-id).
+Applying multiple filters
+Combine multiple filter functions separated by a space; the order of application matters.
+Performance and accessibility
+Excessive use of filters can impact performance. Filters can also affect accessibility by reducing visibility or contrast.
+
+Single filters
+blur(): Blurs the element by the specified number of pixels.
+img { filter: blur(5px); }
+brightness(): Adjusts the element's brightness.
+img { filter: brightness(150%); }
+contrast(): Adjusts the element's contrast.
+img { filter: contrast(200%); }
+drop-shadow(): Adds a shadow to the element, following its shape.
+img { filter: drop-shadow(4px 4px 10px rgba(0,0,0,0.5)); }
+grayscale(): Converts the element to grayscale.
+img { filter: grayscale(100%); }
+hue-rotate(): Rotates the element's colors around the color circle.
+img { filter: hue-rotate(90deg); }
+invert(): Inverts the element's colors.
+img { filter: invert(100%); }
+opacity(): Adjusts the element's transparency.
+img { filter: opacity(50%); }
+saturate(): Adjusts the element's color saturation.
+img { filter: saturate(300%); }
+sepia(): Converts the element to a sepia tone.
+img { filter: sepia(100%); }
+url(): References an SVG filter from an external file.
+filter: url(svg-url#element-id) 
+Multiple filters
+You can combine multiple filter functions by listing them separated by a space within the filter property, and the order in which they are declared matters. 
+css
+img {
+  filter: contrast(200%) brightness(150%); /* Adjusts contrast and then brightness */
+}
+Use code with caution.
+
+Considerations
+Filters can affect the performance of your website, especially if you apply multiple filters to large images or use animations.
+It's crucial to ensure that filters do not negatively impact accessibility, such as reducing contrast or making content illegible. 
+These are just some examples of how you can use CSS filter functions to create various visual effects. Experiment with different values and combinations to 
+achieve the desired result. 

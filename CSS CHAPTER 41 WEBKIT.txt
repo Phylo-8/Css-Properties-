@@ -1,0 +1,12 @@
+WebKit is a layout engine primarily used in web browsers to render web pages. It's open-source and developed primarily by Apple, though it's also used by other browsers such as Safari, Google Chrome, and Opera. WebKit plays a crucial role in interpreting and displaying HTML and CSS, making it an essential component of web browsing.
+
+In the context of CSS, WebKit is known for its support and implementation of certain CSS properties and features. These properties often have the -webkit- prefix in their names, indicating that they are specific to WebKit-based browsers. While most modern browsers strive for interoperability and support a wide range of CSS features, there are still some cases where specific CSS properties or features may behave slightly differently or require vendor prefixes for compatibility.
+
+For example, -webkit-border-radius is a CSS property specific to WebKit browsers that allows you to create rounded corners on elements. Similarly, -webkit-transition and -webkit-animation are used for creating transitions and animations, respectively, in WebKit-based browsers.
+
+However, it's important to note that the need for vendor prefixes like -webkit- has decreased significantly over the years with the advancement of web standards and browser compatibility. Many CSS features that previously required vendor prefixes are now supported without prefixes in most modern browsers.
+
+Despite this, understanding WebKit-specific CSS properties can still be useful, especially when dealing with older versions of browsers or when targeting specific platforms where WebKit-based browsers are prevalent, such as iOS and macOS devices.
+
+
+

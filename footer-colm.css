@@ -1,0 +1,33 @@
+*
+{
+	box-sizing:border-box;
+}
+
+body
+{
+	margin:0px;
+	padding:0.5%;
+}
+
+.f-main
+{
+	column-width:100%;
+	column-count:5;
+	background-color:black;
+	padding:0.5%;
+	color:white;
+	column-gap:2px;
+}	
+
+select
+{
+	width:80%;
+	padding:1%;
+}
+
+.icn
+{
+	color:white;
+	font-size:20px;
+	margin-left:2%;
+}

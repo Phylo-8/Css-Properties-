@@ -1,0 +1,303 @@
+CSS Transitions
+CSS Transitions
+CSS transitions allows you to change property values smoothly, over a given duration.
+
+Mouse over the element below to see a CSS transition effect:
+
+In this chapter you will learn about the following properties:
+
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+How to Use CSS Transitions?
+To create a transition effect, you must specify two things:
+
+the CSS property you want to add an effect to
+the duration of the effect
+Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.
+
+The following example shows a 100px * 100px red <div> element. The <div> element has also specified a transition effect for the width property, with a duration of 2 
+seconds:
+
+Example
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+The transition effect will start when the specified CSS property (width) changes value.
+
+Now, let us specify a new value for the width property when a user mouses over the <div> element:
+
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div></div>
+
+</body>
+</html>
+
+
+Notice that when the cursor mouses out of the element, it will gradually change back to its original style.
+
+Change Several Property Values
+The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the width and 4 seconds for the height:
+
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+Specify the Speed Curve of the Transition
+The transition-timing-function property specifies the speed curve of the transition effect.
+
+The transition-timing-function property can have the following values:
+
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+The following example shows some of the different speed curves that can be used:
+
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-timing-function Property</h1>
+
+<p>Hover over the div elements below, to see the different speed curves:</p>
+
+<div id="div1">linear</div><br>
+<div id="div2">ease</div><br>
+<div id="div3">ease-in</div><br>
+<div id="div4">ease-out</div><br>
+<div id="div5">ease-in-out</div><br>
+
+</body>
+</html>
+
+
+
+Delay the Transition Effect
+The transition-delay property specifies a delay (in seconds) for the transition effect.
+
+The following example has a 1 second delay before starting:
+
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition-delay Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
+
+
+Transition + Transformation
+The following example adds a transition effect to the transformation:
+
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Transition + Transform</h1>
+
+<p>Hover over the div element below:</p>
+
+<div></div>
+
+</body>
+</html>
+
+
+
+More Transition Examples
+The CSS transition properties can be specified one by one, like this:
+
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Properties Specified One by One</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
+
+
+
+or by using the shorthand property transition:
+
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>Using The transition Shorthand Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
+
+
